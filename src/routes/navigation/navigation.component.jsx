@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Fragment, useContext } from "react";
 
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
@@ -15,6 +15,7 @@ import { NavigationContainer, NavLink, NavLinks , LogoContainer } from './naviga
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
   const { isCartOpen } = useContext(CartContext);
+  console.log(currentUser);
 
   return (
     <Fragment>
